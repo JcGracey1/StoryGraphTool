@@ -1,58 +1,93 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "The Groundskeeper and the Ghost",
+    "Credits": "Created by Jacqueline Gracey, inspired by Adam Smith (amsmith@ucsc.edu).",
+    "InitialLocation": "The estate",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "The estate": {
+            "Body": "You are a groundskeeper tasked with revitalizing the grounds of this abandoned estate.\nIn the last hour since your arrival, it has become apparent you are not the only one there.\nA nonhostile spirit of a past inhabitant remains; unable to move on to the after life, they beseech you for help.\nYour job is to find the reason they can't move on.",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
+                    "Text": "The courtyard",
+                    "Target": "The Courtyard"
                 }
             ]
         },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
+        "The Courtyard": {
+            "Body": "The heart of the estate lays a serene circular courtyard. Radiating like spokes on a wheel, a network of cobblestone paths branch outwards, inviting exploration.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "The Rose Garden",
+                    "Target": "The Rose Garden"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
-                }
-            ]
-        },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Porter"
+                    "Text": "The Statue Garden",
+                    "Target": "The Statue Garden"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Oakes"
-                }
-            ]
-        },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "The Graveyard",
+                    "Target": "The Graveyeard"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "The Old Well",
+                    "Target": "The Old Well"
                 }
             ]
         },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        "The Rose Garden": {
+            "Body": "Due to years of neglect, what lay are the skeletons of a once flourishing garden. Weeds now spring up in the spaces that allow for it. It doesn't look like anything else is here.",
+            "Choices": [
+                {
+                    "Text": "The Courtyard",
+                    "Target": "The Courtyard"
+                }
+            ]
+        },
+        "The Statue Garden": {
+            "Body": "Reminisent of old France, beautiful stone statues spread in a methodical pattern. One statue in particular is covered with old plants, unable to see what is being made out.",
+            "Choices": [
+                {
+                    "Text": "The Courtyard",
+                    "Target": "The Courtyard"
+                },
+                {
+                    "Text": "Brush leaves",
+                    "Target": "Brush Leaves"
+                }
+
+            ]
+        },
+        "The Graveyard": {
+            "Body": "You arrive at a small graveyard, most likely personal to those of the estate. You feel an energy drawing you towards one of the headstones",
+            "Choices": [
+                {
+                    "Text": "The Courtyard",
+                    "Target": "The Courtyard"
+                },
+                {
+                    "Text": "Read the name",
+                    "Target": "Read"
+                }
+            ]
+        },
+        "The Old Well": {
+            "Body": "A stone water well sits untouched for years. It looks like it has an indent for some type of tool to go.",
+            "Choices": [
+                {
+                    "Text": "The Courtyard",
+                    "Target": "The Courtyard"
+                }
+            ]
+        }
+    },
+    "Actions":{
+        "Brush Leaves":{
+            "Body":"blah blah"
+        },
+        "Collect Item":{
+            "Body":"Blah"
+        },
+        "Read":{
+            "Body":"readinggg"
         }
     }
 }
