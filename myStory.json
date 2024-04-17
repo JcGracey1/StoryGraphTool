@@ -13,7 +13,7 @@
             ]
         },
         "The Courtyard": {
-            "Body": "The heart of the estate lays a serene circular courtyard. Radiating like spokes on a wheel, a network of cobblestone paths branch outwards, inviting exploration.",
+            "Body": "The heart of the estate lays a serene circular courtyard. Radiating like spokes on a wheel, a network of cobblestone paths branch outwards, inviting exploration.\n",
             "Choices": [
                 {
                     "Text": "The Rose Garden",
@@ -25,7 +25,7 @@
                 },
                 {
                     "Text": "The Graveyard",
-                    "Target": "The Graveyeard"
+                    "Target": "The Graveyard"
                 },
                 {
                     "Text": "The Old Well",
@@ -39,6 +39,24 @@
                 {
                     "Text": "The Courtyard",
                     "Target": "The Courtyard"
+                },
+                {
+                    "Text": "Look around",
+                    "Target": "Look around"
+                }
+                
+            ]
+        },
+        "Look around": {
+            "Body": "Upon closer inspections, it looks like something was left sitting behind a rose bush.",
+            "Choices": [
+                {
+                    "Text" : "Collect Item",
+                    "Target": "Collect Item"
+                },
+                {
+                    "Text": "Back",
+                    "Target": "The Rose Garden"
                 }
             ]
         },
@@ -75,19 +93,49 @@
                 {
                     "Text": "The Courtyard",
                     "Target": "The Courtyard"
+                },
+                {
+                    "Text": "An indent?",
+                    "Target": "Pull Up Well"
+                }
+            ]
+        },
+        "Pull Up Well": {
+            "Body": "You use the crank to turn the mechanism attached to the well. With a creaking sound, the bucket emerges from the depths of the well, dripping with water.",
+            "Choices": [
+                {
+                    "Text": "Look inside the bucket",
+                    "Target": "WellEnding"
+                }
+            ]
+        },
+        "Brush Leaves":{
+            "Body":"The leaves fall in a cluster all at once revealing the stone face of a young man and a small dog to the right of him. The plack reads: Timothy Johnson and Clover",
+            "Choices": [
+                {
+                    "Text": "Return",
+                    "Target": "The Courtyard"
+                }
+            ]
+        },
+        "Collect Item":{
+            "Body":"Looks like some sort of crank. [Item collected]",
+            "Choices": [
+                {
+                    "Text": "Return",
+                    "Target": "The Courtyard"
+                }
+            ]
+        },
+        "Read":{
+            "Body":"Through the mossy and chipped headstone you read: Timothy Johnson. The epitaph note writes 'May you and your best bud rest in heaven.'",
+            "Choices": [
+                {
+                    "Text": "Return",
+                    "Target": "The Courtyard"
                 }
             ]
         }
-    },
-    "Actions":{
-        "Brush Leaves":{
-            "Body":"blah blah"
-        },
-        "Collect Item":{
-            "Body":"Blah"
-        },
-        "Read":{
-            "Body":"readinggg"
-        }
+
     }
 }

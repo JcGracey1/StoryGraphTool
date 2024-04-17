@@ -46,6 +46,7 @@ class Engine {
 
     show(msg) {
         let div = document.createElement("div");
+        div.classList.add("output-line"); // Add a class to each line
         div.innerHTML = msg;
         this.output.appendChild(div);
     }
